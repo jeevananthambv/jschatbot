@@ -8,8 +8,8 @@ class Chatbot {
             window.location.hostname === '127.0.0.1' ||
             window.location.hostname === '';
 
-        // Use localhost for development, cloud URL for production
-        this.baseURL = isLocalhost ? 'http://localhost:5000' : 'https://jeesuva-backend.onrender.com';
+        // Use localhost for development, Vercel URL for production
+        this.baseURL = isLocalhost ? 'http://localhost:5000' : 'https://menstrual-health-startup.vercel.app';
 
         console.log(`🌍 Environment: ${isLocalhost ? 'LOCAL' : 'PRODUCTION'}`);
         console.log(`📡 API endpoint: ${this.baseURL}`);
@@ -106,7 +106,7 @@ class Chatbot {
             this.isConnected = false;
 
             if (!this.errorShown) {
-                this.addMessage('⚠️ The chatbot service is currently offline.', 'bot');
+                this.addMessage('⚠️ The chatbot service is currentlyoffline.', 'bot');
                 this.addMessage('💡 We\'re working to bring it back online. Please try again later!', 'bot');
                 this.errorShown = true;
             }

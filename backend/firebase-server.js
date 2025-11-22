@@ -268,28 +268,32 @@ function getFallbackResponse(userMessage) {
 }
 
 // ==================== START SERVER ====================
-app.listen(PORT, () => {
-    console.log('\n' + '='.repeat(70));
-    console.log('🚀 JEESUVA FIREBASE SERVER - PRODUCTION READY');
-    console.log('='.repeat(70));
-    console.log(`✅ Server running on http://localhost:${PORT}`);
-    console.log(`📡 Firebase Project: jeesuva-cb878`);
-    console.log(`⚡ Powered by: Express + ChatbotService + Firebase`);
-    console.log(`🔒 Security: Headers + Input Sanitization`);
-    console.log('='.repeat(70));
-    console.log('Available Endpoints:');
-    console.log('  POST /api/chat       - Chat with Jeesuva');
-    console.log('  POST /api/emotion    - Analyze emotions');
-    console.log('  GET  /api/health     - Health check');
-    console.log('  GET  /api/test       - Test endpoint');
-    console.log('  GET  /api/info       - API information');
-    console.log('='.repeat(70) + '\n');
-});
+// Only start server if not running in Vercel (Vercel uses serverless)
+if (process.env.VERCEL !== '1') {
+    app.listen(PORT, () => {
+        console.log('\n' + '='.repeat(70));
+        console.log('🚀 JEESUVA FIREBASE SERVER - PRODUCTION READY');
+        console.log('='.repeat(70));
+        console.log(`✅ Server running on http://localhost:${PORT}`);
+        console.log(`📡 Firebase Project: jeesuva-cb878`);
+        console.log(`⚡ Powered by: Express + ChatbotService + Firebase`);
+        console.log(`🔒 Security: Headers + Input Sanitization`);
+        console.log('='.repeat(70));
+        console.log('Available Endpoints:');
+        console.log('  POST /api/chat       - Chat with Jeesuva');
+        console.log('  POST /api/emotion    - Analyze emotions');
+        console.log('  GET  /api/health     - Health check');
+        console.log('  GET  /api/test       - Test endpoint');
+        console.log('  GET  /api/info       - API information');
+        console.log('='.repeat(70) + '\n');
+    });
 
-// Graceful shutdown
-process.on('SIGINT', () => {
-    console.log('\n\n🛑 Server shutting down gracefully...');
-    process.exit(0);
-});
+    // Graceful shutdown
+    process.on('SIGINT', () => {
+        console.log('\n\n🛑 Server shutting down gracefully...');
+        process.exit(0);
+    });
+}
 
+// Export for Vercel serverless
 module.exports = app;
