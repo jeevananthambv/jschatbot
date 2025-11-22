@@ -1,0 +1,28 @@
+# Vercel
+.vercel
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Dependencies
+node_modules/
+
+# Firebase (not needed for Vercel)
+.firebase/
+firebase-debug.log
+
+# Frontend (already deployed to Firebase)
+frontend/
+
+# Docs
+docs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

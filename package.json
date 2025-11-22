@@ -1,0 +1,22 @@
+{
+  "name": "jeesuva",
+  "version": "2.0.0",
+  "description": "Jeesuva - Menstrual health companion",
+  "main": "backend/firebase-server.js",
+  "scripts": {
+    "start": "cd backend && node firebase-server.js",
+    "dev": "cd backend && node firebase-server.js",
+    "server": "cd backend && node firebase-server.js"
+  },
+  "keywords": [
+    "menstrual-health",
+    "firebase",
+    "chatbot",
+    "jeesuva"
+  ],
+  "author": "Jeesuva Team",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^12.6.0"
+  }
+}

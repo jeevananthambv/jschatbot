@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Product - Jeesuva | Menstrual Pain Management Solution</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .product-hero {
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            padding: 120px 0 80px;
+        }
+
+        .product-feature {
+            border-left: 4px solid #e91e63;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
+        .ingredient-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .ingredient-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ingredient-icon {
+            font-size: 2.5rem;
+            color: #e91e63;
+            margin-bottom: 15px;
+        }
+
+        .usage-step {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            background: #e91e63;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .specs-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .specs-table th {
+            background: #e91e63;
+            color: white;
+            padding: 15px;
+        }
+
+        .specs-table td {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .benefit-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .product-comparison {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .comparison-item {
+            padding: 15px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .check-mark {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .cross-mark {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat me-2"></i>
+                <strong>Jeesuva</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Hero Section -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Jeesuva Complete Menstrual Care Kit</h1>
+                    <p class="lead mb-4">A revolutionary two-part solution combining external heat therapy with internal
+                        herbal relief, designed specifically for resource-limited environments.</p>
+                    <div class="hero-buttons">
+                        <a href="#specifications" class="btn btn-primary btn-lg me-3">Technical Specs</a>
+                        <a href="#ingredients" class="btn btn-outline-primary btn-lg">Herbal Ingredients</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="product-visual">
+                        <i class="fas fa-thermometer-half product-main-icon"></i>
+                        <i class="fas fa-leaf product-main-icon"></i>
+                        <i class="fas fa-heart product-main-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Holistic Menstrual Pain Management</h2>
+                    <p class="section-subtitle">Addressing both external discomfort and internal symptoms through
+                        integrated therapy</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <div class="product-feature">
+                        <h3><i class="fas fa-fire me-2"></i>Self-Activated Heating Pad</h3>
+                        <p>Reusable sodium acetate-based heating pad that provides consistent, controlled heat for 4-6
+                            hours without electricity or hot water.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>Activates with a simple click</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Maintains safe temperature (40-50°C)</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Reusable up to 100 cycles</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Washable, adjustable cover</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-feature">
+                        <h3><i class="fas fa-leaf me-2"></i>Natural Herbal Sachets</h3>
+                        <p>Preservative-free herbal blend using traditional ingredients known for their
+                            anti-inflammatory and antispasmodic properties.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i>100% natural ingredients</li>
+                            <li><i class="fas fa-check text-success me-2"></i>No chemical preservatives</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Refrigeration not required</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Easy to consume with warm water</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Simple 3-Step Usage</h2>
+                    <p class="section-subtitle">Designed for easy use in school environments</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="usage-step">
+                        <div class="step-number">1</div>
+                        <h4>Activate Heat</h4>
+                        <p>Click the metal disc in the heating pad to activate. Wait 30 seconds for heat generation.</p>
+                        <i class="fas fa-mouse-pointer step-icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="usage-step">
+                        <div class="step-number">2</div>
+                        <h4>Apply & Consume</h4>
+                        <p>Place heating pad on lower abdomen. Mix herbal sachet with warm water and drink.</p>
+                        <i class="fas fa-hand-holding-medical step-icon"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="usage-step">
+                        <div class="step-number">3</div>
+                        <h4>Reuse & Recharge</h4>
+                        <p>After use, boil heating pad to reset. Reuse both components multiple times.</p>
+                        <i class="fas fa-recycle step-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herbal Ingredients -->
+    <section id="ingredients" class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Natural Herbal Formulation</h2>
+                    <p class="section-subtitle">Carefully selected traditional ingredients with proven benefits</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Ajwain (Carom Seeds)</h4>
+                        <p><strong>Primary Benefit:</strong> Antispasmodic properties relieve menstrual cramps</p>
+                        <p><strong>Action:</strong> Reduces uterine muscle contractions and bloating</p>
+                        <small class="text-muted">Traditional use supported by modern research</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-root-alt"></i>
+                        </div>
+                        <h4>Dry Ginger</h4>
+                        <p><strong>Primary Benefit:</strong> Anti-inflammatory and pain relief</p>
+                        <p><strong>Action:</strong> Reduces prostaglandins that cause menstrual pain</p>
+                        <small class="text-muted">Clinically studied for dysmenorrhea relief</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h4>Jaggery & Rock Salt</h4>
+                        <p><strong>Primary Benefit:</strong> Replenishes iron and electrolytes</p>
+                        <p><strong>Action:</strong> Combats fatigue and maintains energy levels</p>
+                        <small class="text-muted">Natural source of essential minerals</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h4>Tulsi (Holy Basil)</h4>
+                        <p><strong>Primary Benefit:</strong> Adaptogenic stress relief</p>
+                        <p><strong>Action:</strong> Balances hormones and reduces anxiety</p>
+                        <small class="text-muted">Known as "Queen of Herbs" in Ayurveda</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <h4>Nannari Root</h4>
+                        <p><strong>Primary Benefit:</strong> Natural cooling and digestive aid</p>
+                        <p><strong>Action:</strong> Soothes inflammation and aids digestion</p>
+                        <small class="text-muted">Traditional summer coolant in Indian medicine</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-lemon"></i>
+                        </div>
+                        <h4>Lemon Powder</h4>
+                        <p><strong>Primary Benefit:</strong> Vitamin C for iron absorption</p>
+                        <p><strong>Action:</strong> Enhances nutrient uptake and provides antioxidants</p>
+                        <small class="text-muted">Natural preservative and flavor enhancer</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specifications" class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Technical Specifications</h2>
+                    <div class="specs-table mt-5">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="text-center">Heating Pad Specifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Technology</strong></td>
+                                    <td>Sodium Acetate Trihydrate Crystallization</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Activation Method</strong></td>
+                                    <td>Metal disc click (no electricity required)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Temperature Range</strong></td>
+                                    <td>40-50°C (safe therapeutic range)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Duration</strong></td>
+                                    <td>4-6 hours of consistent heat</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Reusability</strong></td>
+                                    <td>Up to 100 activation cycles</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Recharging</strong></td>
+                                    <td>Boil in water for 10-15 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Cover Material</strong></td>
+                                    <td>Cotton blend, machine washable</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Size</strong></td>
+                                    <td>15cm x 20cm (optimal for abdominal area)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="specs-table mt-4">
+                        <table class="table table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="text-center">Herbal Sachet Specifications</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Form</strong></td>
+                                    <td>Powdered herbal blend in food-grade sachets</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Net Weight</strong></td>
+                                    <td>5g per sachet (single use)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Shelf Life</strong></td>
+                                    <td>12 months (no refrigeration needed)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dosage</strong></td>
+                                    <td>2-3 sachets per day during menstruation</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Preparation</strong></td>
+                                    <td>Mix with 150ml warm water</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Packaging</strong></td>
+                                    <td>Aluminum laminated sachets (moisture proof)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Key Benefits & Impact</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Improved School Attendance</h4>
+                        <p>85% reduction in menstrual-related absenteeism based on pilot studies</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4>Electricity-Free Operation</h4>
+                        <p>No dependency on power sources, ideal for rural and government schools</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <h4>Cost Effective</h4>
+                        <p>80% cheaper than conventional solutions over one year of use</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Safe & Non-Invasive</h4>
+                        <p>No side effects, drug-free approach with controlled temperature</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-egg"></i>
+                        </div>
+                        <h4>Culturally Acceptable</h4>
+                        <p>Uses familiar traditional ingredients accepted across communities</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <h4>Eco-Friendly</h4>
+                        <p>Reduces waste by 90% compared to disposable alternatives</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Why Jeesuva Stands Out</h2>
+                    <div class="product-comparison mt-5">
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <strong>Feature</strong>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <strong>Traditional Methods</strong>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <strong>Jeesuva</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Electricity Dependency
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="cross-mark">Required</span>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="check-mark">Not Required</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Reusability
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="cross-mark">Single Use</span>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="check-mark">100+ Uses</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Internal + External Relief
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="cross-mark">External Only</span>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="check-mark">Dual Action</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Cost per Use
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="cross-mark">₹25-50</span>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="check-mark">₹2-5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comparison-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    School Suitability
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="cross-mark">Limited</span>
+                                </div>
+                                <div class="col-md-4 text-center">
+                                    <span class="check-mark">Optimized</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety & Certification -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Safety & Quality Assurance</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Quality Certified</h4>
+                        <p>All materials meet international safety standards for medical-grade devices</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>ISO 13485 Certified Manufacturing</li>
+                            <li><i class="fas fa-check text-success me-2"></i>CE Marked for Medical Devices</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Food-grade herbal ingredients</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4>Safety Features</h4>
+                        <p>Multiple safety mechanisms ensure risk-free usage</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Temperature limiter (max 52°C)</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Leak-proof sealed construction</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Hypoallergenic cover material</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Child-safe activation mechanism</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Ready to Empower Your Community?</h2>
+                    <p class="section-subtitle">Join us in bringing dignified menstrual health solutions to schools
+                        across India</p>
+                    <div class="mt-4">
+                        <a href="index.html#contact" class="btn btn-light btn-lg me-3">Become a Partner</a>
+                        <a href="resources.html" class="btn btn-outline-light btn-lg">Download Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>Jeesuva</h5>
+                    <p>Empowering adolescent girls with dignified menstrual health management solutions.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 Jeesuva. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p>Breaking stigma, building confidence</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add some interactive features
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add animation to product icons
+            const productIcons = document.querySelectorAll('.product-main-icon');
+            productIcons.forEach((icon, index) => {
+                icon.style.animation = `float 3s ease-in-out ${index * 0.5}s infinite`;
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

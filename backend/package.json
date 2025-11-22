@@ -1,0 +1,31 @@
+{
+  "name": "jeesuva-backend",
+  "version": "2.0.0",
+  "description": "Backend for Jeesuva - Menstrual health companion powered by Firebase",
+  "main": "firebase-server.js",
+  "scripts": {
+    "start": "node firebase-server.js",
+    "dev": "node firebase-server.js",
+    "server": "node firebase-server.js"
+  },
+  "keywords": [
+    "menstrual-health",
+    "firebase",
+    "chatbot",
+    "jeesuva"
+  ],
+  "author": "Jeesuva Team",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.21.2",
+    "firebase": "^10.0.0",
+    "firebase-admin": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}

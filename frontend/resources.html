@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - ThermaRelief | Menstrual Health Education & Materials</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .resources-hero {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            padding: 120px 0 80px;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border-left: 5px solid #e91e63;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .resource-icon {
+            font-size: 3rem;
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background: #e91e63;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn:hover {
+            background: #c2185b;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .resource-category {
+            margin-bottom: 50px;
+        }
+
+        .language-badge {
+            background: #ff4081;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .research-card {
+            background: linear-gradient(135deg, #e91e63, #9c27b0);
+            color: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 15px 0;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .training-module {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 4px solid #e91e63;
+        }
+
+        .partner-logo {
+            height: 60px;
+            margin: 15px;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .partner-logo:hover {
+            opacity: 1;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e9ecef;
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #e91e63;
+            cursor: pointer;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .impact-visual {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            margin: 30px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #e91e63;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #e91e63;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #e91e63;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-heartbeat me-2"></i>
+                <strong>ThermaRelief</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resources.html">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Resources Hero Section -->
+    <section class="resources-hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Educational Resources & Materials</h1>
+                    <p class="lead mb-4">Comprehensive menstrual health education materials, implementation guides, and
+                        research resources for partners, schools, and communities.</p>
+                    <div class="hero-buttons">
+                        <a href="#downloads" class="btn btn-primary btn-lg me-3">Download Materials</a>
+                        <a href="#research" class="btn btn-outline-primary btn-lg">View Research</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="impact-visual">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Educational Materials</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="impact-visual">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Regional Languages</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="impact-visual">
+                        <div class="stat-number">5K+</div>
+                        <div class="stat-label">Downloads</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="impact-visual">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Free Access</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Materials -->
+    <section id="downloads" class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Educational Materials</h2>
+                    <p class="section-subtitle text-center">Comprehensive resources for menstrual health education and
+                        awareness</p>
+
+                    <div class="resource-category">
+                        <h3 class="text-center mb-4"><i class="fas fa-school me-2"></i>For Schools & Teachers</h3>
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h4>Teacher's Guide to Menstrual Health</h4>
+                                <p>Complete curriculum for conducting menstrual health sessions in schools. Includes
+                                    lesson plans, activities, and discussion guides.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                    <span class="language-badge">Hindi</span>
+                                    <span class="language-badge">Tamil</span>
+                                    <span class="language-badge">Telugu</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download PDF (2.1 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h4>Student Workbook</h4>
+                                <p>Interactive workbook for students with exercises, quizzes, and self-assessment tools.
+                                    Age-appropriate content for 12-18 years.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                    <span class="language-badge">Hindi</span>
+                                    <span class="language-badge">Marathi</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download PDF (3.4 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-film"></i>
+                                </div>
+                                <h4>Educational Videos</h4>
+                                <p>Series of animated videos explaining menstrual health, product usage, and breaking
+                                    common myths. Suitable for classroom screening.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">Hindi</span>
+                                    <span class="language-badge">English</span>
+                                    <span class="language-badge">Bengali</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Package (45 MB)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3 class="text-center mb-4"><i class="fas fa-users me-2"></i>For NGOs & Community Workers</h3>
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <h4>Community Awareness Toolkit</h4>
+                                <p>Complete set of materials for conducting community awareness sessions, including flip
+                                    charts, posters, and facilitator guides.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">Hindi</span>
+                                    <span class="language-badge">Tamil</span>
+                                    <span class="language-badge">Kannada</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Toolkit (15 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <h4>Implementation Framework</h4>
+                                <p>Step-by-step guide for implementing ThermaRelief program in communities. Includes
+                                    monitoring and evaluation templates.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                    <span class="language-badge">Hindi</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download PDF (4.2 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Impact Assessment Tools</h4>
+                                <p>Survey questionnaires, data collection forms, and analysis templates for measuring
+                                    program impact and outcomes.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Tools (1.8 MB)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category">
+                        <h3 class="text-center mb-4"><i class="fas fa-briefcase me-2"></i>For Partners & Corporates</h3>
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-file-contract"></i>
+                                </div>
+                                <h4>CSR Partnership Proposal</h4>
+                                <p>Detailed proposal template for corporate social responsibility partnerships,
+                                    including impact metrics and implementation plans.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download Template (1.5 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-presentation"></i>
+                                </div>
+                                <h4>Investor Pitch Deck</h4>
+                                <p>Comprehensive presentation deck for potential investors and partners, showcasing
+                                    business model and social impact.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download PPT (8.7 MB)
+                                </a>
+                            </div>
+
+                            <div class="resource-card">
+                                <div class="resource-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h4>Partnership Agreement Template</h4>
+                                <p>Standard partnership agreement template for NGOs, government bodies, and corporate
+                                    partners.</p>
+                                <div class="mb-3">
+                                    <span class="language-badge">English</span>
+                                </div>
+                                <a href="#" class="download-btn">
+                                    <i class="fas fa-download"></i> Download DOC (0.8 MB)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research & Evidence -->
+    <section id="research" class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Research & Evidence</h2>
+                    <p class="section-subtitle text-center">Scientific backing and impact studies supporting our
+                        approach</p>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="research-card">
+                                <h4><i class="fas fa-chart-bar me-2"></i>Pilot Study Results 2023</h4>
+                                <p>Comprehensive study conducted across 50 government schools in Rajasthan and Uttar
+                                    Pradesh.</p>
+                                <div class="row text-center mt-3">
+                                    <div class="col-4">
+                                        <div class="stat-number">85%</div>
+                                        <div class="stat-label">Reduction in absenteeism</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-number">92%</div>
+                                        <div class="stat-label">Pain relief satisfaction</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-number">78%</div>
+                                        <div class="stat-label">Improved concentration</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="download-btn mt-3" style="background: white; color: #e91e63;">
+                                    <i class="fas fa-download"></i> Full Study Report
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="research-card">
+                                <h4><i class="fas fa-flask me-2"></i>Clinical Efficacy Study</h4>
+                                <p>Randomized controlled trial evaluating the effectiveness of combined heat and herbal
+                                    therapy.</p>
+                                <div class="row text-center mt-3">
+                                    <div class="col-4">
+                                        <div class="stat-number">4.2x</div>
+                                        <div class="stat-label">Faster pain relief</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-number">0%</div>
+                                        <div class="stat-label">Side effects</div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stat-number">96%</div>
+                                        <div class="stat-label">User adherence</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="download-btn mt-3" style="background: white; color: #e91e63;">
+                                    <i class="fas fa-download"></i> Research Paper
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resource-category mt-5">
+                        <h3 class="text-center mb-4">Academic Publications</h3>
+                        <div class="resource-grid">
+                            <div class="resource-card">
+                                <h5>"Impact of Menstrual Health Interventions on Educational Outcomes"</h5>
+                                <p><em>Journal of Adolescent Health, 2023</em></p>
+                                <p>Study demonstrating correlation between menstrual pain management and improved
+                                    academic performance.</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Read Online
+                                </a>
+                            </div>
+                            <div class="resource-card">
+                                <h5>"Traditional Herbal Medicine in Modern Menstrual Care"</h5>
+                                <p><em>Indian Journal of Medical Research, 2023</em></p>
+                                <p>Review of evidence-based traditional remedies for dysmenorrhea and their integration
+                                    with modern solutions.</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Read Online
+                                </a>
+                            </div>
+                            <div class="resource-card">
+                                <h5>"Cost-effectiveness Analysis of Reusable Menstrual Pain Solutions"</h5>
+                                <p><em>Health Economics Review, 2024</em></p>
+                                <p>Economic analysis comparing long-term costs of various menstrual pain management
+                                    approaches.</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-external-link-alt"></i> Read Online
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training & Capacity Building -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h2 class="section-title text-center">Training Programs</h2>
+                    <p class="section-subtitle text-center">Capacity building initiatives for effective implementation
+                    </p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="training-module">
+                                <h4><i class="fas fa-user-graduate me-2"></i>Master Trainer Program</h4>
+                                <p>5-day intensive training for educators and community health workers to become
+                                    certified menstrual health trainers.</p>
+                                <ul>
+                                    <li>Comprehensive curriculum delivery</li>
+                                    <li>Facilitation skills development</li>
+                                    <li>Impact measurement training</li>
+                                </ul>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-info-circle"></i> Program Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="training-module">
+                                <h4><i class="fas fa-school me-2"></i>School Implementation Workshop</h4>
+                                <p>2-day workshop for school administrators and teachers on integrating menstrual health
+                                    into school programs.</p>
+                                <ul>
+                                    <li>Infrastructure planning</li>
+                                    <li>Student engagement strategies</li>
+                                    <li>Parent communication guides</li>
+                                </ul>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-calendar-check"></i> Schedule Workshop
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <h4>Upcoming Training Sessions</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h6>Delhi Master Trainer Program</h6>
+                                <p><strong>Date:</strong> March 15-19, 2024 | <strong>Venue:</strong> India Habitat
+                                    Centre</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-user-plus"></i> Register Now
+                                </a>
+                            </div>
+                            <div class="timeline-item">
+                                <h6>Online Teacher Training</h6>
+                                <p><strong>Date:</strong> April 5-6, 2024 | <strong>Platform:</strong> Zoom</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-user-plus"></i> Register Now
+                                </a>
+                            </div>
+                            <div class="timeline-item">
+                                <h6>Rural Implementation Workshop - MP</h6>
+                                <p><strong>Date:</strong> May 10-11, 2024 | <strong>Venue:</strong> Bhopal</p>
+                                <a href="#" class="download-btn btn-sm">
+                                    <i class="fas fa-user-plus"></i> Register Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-center">Frequently Asked Questions</h2>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            <i class="fas fa-chevron-down me-2"></i>Are these resources really free to use?
+                        </div>
+                        <div class="collapse show" id="faq1">
+                            <p class="mt-2">Yes, all our educational materials are completely free to download and use.
+                                We believe in open access to menstrual health education. You can use, share, and adapt
+                                these materials for educational purposes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            <i class="fas fa-chevron-down me-2"></i>Can I translate these materials into local
+                            languages?
+                        </div>
+                        <div class="collapse" id="faq2">
+                            <p class="mt-2">Absolutely! We encourage translation and localization. If you translate our
+                                materials, please share them with us so we can make them available to others. We can
+                                also provide editable source files upon request.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            <i class="fas fa-chevron-down me-2"></i>How can I request custom materials for my
+                            organization?
+                        </div>
+                        <div class="collapse" id="faq3">
+                            <p class="mt-2">We welcome requests for customized materials. Please contact our resource
+                                team at resources@thermarelief.org with details about your requirements, target
+                                audience, and intended use.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            <i class="fas fa-chevron-down me-2"></i>Do you provide physical copies of these materials?
+                        </div>
+                        <div class="collapse" id="faq4">
+                            <p class="mt-2">For large-scale implementations with our partner organizations, we can
+                                arrange for printed materials. For individual requests, we recommend downloading and
+                                printing the PDF files locally to reduce costs and environmental impact.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            <i class="fas fa-chevron-down me-2"></i>How often are these resources updated?
+                        </div>
+                        <div class="collapse" id="faq5">
+                            <p class="mt-2">We update our resources quarterly based on new research, user feedback, and
+                                field experiences. Subscribe to our newsletter to receive updates about new materials
+                                and revised versions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-title">Our Resource Partners</h2>
+                    <p class="section-subtitle">Collaborating with leading organizations to create impactful educational
+                        materials</p>
+
+                    <div class="row mt-4 justify-content-center">
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/150x60/ffffff/000000?text=UNICEF" alt="UNICEF"
+                                class="partner-logo">
+                        </div>
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/150x60/ffffff/000000?text=WHO" alt="WHO"
+                                class="partner-logo">
+                        </div>
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/150x60/ffffff/000000?text=Ministry+WCD"
+                                alt="Ministry WCD" class="partner-logo">
+                        </div>
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/150x60/ffffff/000000?text=Bill+Melinda+Gates"
+                                alt="Bill & Melinda Gates Foundation" class="partner-logo">
+                        </div>
+                        <div class="col-auto">
+                            <img src="https://via.placeholder.com/150x60/ffffff/000000?text=TATA+Trusts"
+                                alt="TATA Trusts" class="partner-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="section-title">Need Custom Resources?</h2>
+                    <p class="section-subtitle">We can develop customized materials tailored to your specific needs and
+                        context</p>
+                    <div class="mt-4">
+                        <a href="mailto:resources@thermarelief.org" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-envelope me-2"></i>Contact Resource Team
+                        </a>
+                        <a href="index.html#contact" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-download me-2"></i>Bulk Download All
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>ThermaRelief</h5>
+                    <p>Empowering adolescent girls with dignified menstrual health management solutions.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="product.html">Product</a></li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="mt-3">
+                    <small>Subscribe to resource updates:</small>
+                    <div class="input-group mt-1">
+                        <input type="email" class="form-control form-control-sm" placeholder="Your email">
+                        <button class="btn btn-sm btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; 2024 ThermaRelief. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <p>Breaking stigma, building confidence</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // FAQ toggle functionality
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const icon = this.querySelector('i');
+                    if (icon.classList.contains('fa-chevron-down')) {
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                });
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add animation to resource cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.resource-card').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
