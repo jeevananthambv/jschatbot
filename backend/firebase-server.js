@@ -295,5 +295,19 @@ if (process.env.VERCEL !== '1') {
     });
 }
 
+// Root route for friendly welcome
+app.get('/', (req, res) => {
+    res.status(200).json({
+        message: '🚀 Jeesuva Backend is Running!',
+        status: 'online',
+        timestamp: new Date().toISOString(),
+        endpoints: {
+            health: '/api/health',
+            test: '/api/test',
+            chat: '/api/chat (POST)'
+        }
+    });
+});
+
 // Export for Vercel serverless
 module.exports = app;
